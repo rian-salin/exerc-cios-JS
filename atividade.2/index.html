@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 2</title>
+
+    <style>
+        body{
+            padding: 10%;
+        }
+
+        .area{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="area">
+        interaja...
+    </div>
+
+
+    <script>
+        let area = document.querySelector('.area');
+
+        area.addEventListener('click', clicar);
+
+        function clicar(){
+            area.innerText = "clicou!";
+            area.style.background = "blue";
+        }
+     </script>
+</body>
+</html>
